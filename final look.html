@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="final.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">LMS</div>
+        <div class="nav-links">
+            <div class="dropdown-toggle">
+                <a href="#" id="Home">Home</a>
+            </div>
+            <div class="dropdown-toggle">
+              <p><a href="./about us/about.html"> About</a></p>
+
+            </div>
+            <div class="dropdown-toggle">
+                <a href="#">Course</a>
+                <div class="dropdown">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                    <a href="#">Submenu Item 3</a>
+                    <a href="#">Submenu Item 3</a>
+                    <a href="#">Submenu Item 3</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a href="#">LMS</a>
+                <!-- <div class="dropdown">
+                    <a href="#">Submenu Item 1</a>
+                    <a href="#">Submenu Item 2</a>
+                    <a href="#">Submenu Item 3</a>
+                    <a href="#">Submenu Item 3</a>
+                    <a href="#">Submenu Item 3</a>
+                </div> -->
+            </div>
+            <div class="dropdown-toggle">
+                <a href="#Contact">Contact Us</a>
+                <!-- <div class="dropdown">
+                    <a href="#">marie-jeanne3281@tntuyspk</a>
+                    <a href="#">crankymonkey.info</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="icons">
+            <div class="user-dropdown">
+                <i class="fa-solid fa-user-plus" id="user-icon"></i> <!-- User Icon -->
+                <div class="dropdown-content" id="dropdown-content">
+                    <div class="user-image">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAECAwYHBQj/xAA4EAACAQMBBQUECAcBAAAAAAAAAQIDBBEFBhIhMUEHE1FhcRSBkbEVImKSoaLB4TIzQlNylNIX/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIBAwT/xAAcEQEBAAIDAQEAAAAAAAAAAAAAAQIRAxIhMTL/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADFKqly4mNzk+b+AVMakZQ3l4kUGbb0SsrxKkTlyLlUkuuRsuCSDHCpnnwZkNTZoAAYAAAAAAAAAACjeDBObk/BCpPebXQsMdMcQAGKAcr267WZ6Nql3pOj2MKtxby3J3NeX1FLGXiK545cWuJz2j2m7X0rx3L1Z1H1ozpRdP03cA2+lgcr2D7WJavqcdO2ip2lrKqsULim3GMp5X1ZJt4z0eTqgNhfCbi8PkWAFm0pNPkVI9KW7LHQkFOVmgABgAAAAAGOtLEfUyEeq8z9ArGerAAS6AWMrIAHz3s7sZPaPbHXaet1K9OFnczdbc4SqTlOW6stPCws/A3237M9lKDjL2CpVcf7txOSfqs4Nit7Glba1qdzFYrXTpyq+bjmKf3d0mnl5OTLt49PFx49d2OMdpWxtpp2p6T9BUXQ+kKvcdzBtpVMpJx6rn6cDvtGDhShCTzKMUm/E1m9saV3qun1prerWrlO3+zN7q3vcs/E2g7ceW8XHkmsgAHRAZ6UsrjzRgL6T+tjxNZlPEgAGuQAAAAAMivmyUyIZV4AAMWAGtbQbcaLojlTlXd3dR4O3tcSaf2nnEfn5A29PVn3VSjVae68wk106pv4P4kffhu729Hd8c8DW9n9uKe0N9Ut7qFOznHjb09/PecOP1vHyS8efTY+5pb293NPf8dxZR5OX9PVw/lI0mXeXFep/RuxUOHTjx956ZqWvbQ0tmrb2uajUqVGoRoOWHU480+mMvj+xh0rtK0K+koXXfWE/GvFOH3k3hebwd+Ozq4cnmVbmC2lVp16UatGpCpTmsxnCWYyXin1LjogKx4SXqUKrmgX4lAApxAAAAABkWSxJolGCssST6MyqxvrGAWznGnCU5vEYxcn6Ix0cu7Tdrbj22poemVpUqVJL2qpTk1KUms7ia5JJrPjy6cecLySXoZbq5nfXVa8qZcricqjz9p5MRyt2xU9e02o1yzpKlQ1OvuJYSqYm16OSbPHBmiWz4zXd1cXteVe8r1K9aXOdSWX+y8jCCoG19nu0tfRtZoWdarJ6fdVFTnTk8qEpPCkvDi1ny9Dtx8y7z3d6HB80z6Q0q59t0yzus576hCpn1imXiJRdBZmi0yUVltll+M4AKcgAAAAALZx3kXACJ1PI2vuXabL6pWTw1azin4NrC/FnuVYZ4o03tTuHR2NuoxeJVatKn+dN/gmTXXe44ljHBFIfwr3/Mr0LafJ/wCT+ZxFwAAB8FkFtX+XLzWAKw4U4ryR33YOr32xukSznFuofdzH9Dgfodw7MKjq7GWUf7c6sPzt/qXgRtWM8iTCO6sFlKGOLMp0iMrsABqQAAAAAAAFDVu0LZ672h0NW2n1Kca1Oqqu5UeFUwmsZ6czagZWyvmO/sbrTrqVrf29S3rx5wqLD93ivNESl/LR9M6rpGnavb9xqdpSuafRTjxj6PmvcaDqvZLaTblpGoVbfwpV495Fej4P45OdwVMnJgbpd9mO0lFvuIWtys84V91/CSXzIf8A57tXnH0S/wDZo/8AZPWt3GrltT+D3r5m72nZhtJXa76NpbLq6lbefwin8zZ9J7JrGm1LV76rdPrSoru4P38X8jetNxy3TtPvNTuo2unW1S4ry/oprOPNvkl5s7tsDoFzs/oMLS+qU51nUlUahyhnHDPXlzPY0vSrDSrZW+m2lK3pc92nHGX4t82/UmIvHHSLVQAWwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=" alt="User Image">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name ">Hassan Faiz</div>
+                        <div class="course">Course: Front End
+                        </div>
+                        <button class="btn"><a href="./signup page/signup.html">sign up</a></button>
+                        <button class="btn"><a href="./login page/login.html">Login</a></button>
+                        <button class="btn edit-profile"><a href="./edit/edit.html">Edit Profile</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="section">
+            <!-- image code in css -->
+        </div>
+        <div class="section-1">
+            <p class="animate__animated animate__bounce animate__infinite animate__slow">Learn Your
+                Favorite Course
+                From Online</p>
+
+                <button class="btn-3"><a href="#">Browse Our Course</a></button>
+        </div>
+    </div>
+    <!-- new section -->
+    <div class="welcome" id="Home">
+        <div class="wel-image"></div>
+        <div class="wel-text">
+         <h1>Welcome to University</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam nisi eos accusantium eligendi velit deleniti nihil ad deserunt rerum incidunt nulla nemo eius molestiae architecto beatae asperiores doloribus animi.</p>
+         <button ><a href="#">Read More</a></button>
+        </div>
+    </div>
+    <!-- new section -->
+
+     <!-- popular subject -->
+  
+  <!-- popular subject -->
+
+   
+
+    <div class="box">
+        <p>Apply for your famous course today</p>
+      </div>
+ <br><br>
+ 
+ <!-- course section 1-->
+      <section id="courses">
+        <div class="cards pad">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>  
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+            </div>
+        <div class="cards">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+    </section>
+    <!-- course section 1 -->
+
+    <br>
+
+    <!-- course section 2-->
+      <section id="courses">
+        <div class="cards pad">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+            </div>
+        <div class="cards">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <div class="text">
+                  <h2>Course Title</h2>
+                  <p>Learn the fundamentals of web development with our comprehensive course.</p>
+                </div>
+              </div>
+            <p><a href="#">Beginners guide to HTML
+                Adobe Guide, Layes, Smart Objects etc...</a></p>
+                <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+    </section>
+  <!-- course section 2-->
+
+ 
+
+
+<!-- article section -->
+    <div class="box">
+        <p>Our New Article</p>
+     </div>
+     <div class="art-code">
+        <div class="art-code-1 mar">
+            <div class="image1"></div>
+            <div class="text1">
+                <h2>HOW TO MAKE A BEST WEBSITE</h2>
+              </div>
+              <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+        <div class="art-code-1 mar2">
+            <div class="image1"></div>
+            <div class="text1">
+                <h2>HOW TO MAKE A BEST WEBSITE</h2>
+              </div>
+              <div class="last" ><button><a href="#">Read More</a></button></div>
+        </div>
+        <div class="art-code-1 mar3">
+            <div class="image1"></div>
+            <div class="text1">
+                <h2>HOW TO MAKE A BEST WEBSITE</h2>
+              </div>
+              <div class="last" ><button><a href="./signup page/signup.html">Read More</a></button></div>
+        </div>
+     </div>
+     <!-- article section -->
+<!-- footer code -->
+<div class="footer">
+  <div class="link">
+    <h2>Welcome to University</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo obcaecati et, sapiente doloremque autem odio alias saepe assumenda odit laboriosam fugit dolore magnam! Tempora impedit illo modi voluptates autem! Magni.</p>
+  </div>
+  <div class="link1">
+    <h3>Resources</h3>
+    <p><a href="#">contact</a></p>
+    <p><a href="#">contact</a></p>
+    <p><a href="#">contact</a></p>
+    <p><a href="#">contact</a></p>
+  </div>
+  <div class="link2">
+    <h3>Quick Links</h3>
+    <p><a href="./about us/about.html"> <i class="fa-solid fa-arrow-right"></i> About</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i>  Cources</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i>  Lms</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i>  contact</a></p>
+  </div>
+  <div class="link3">
+    <h3>Get In Touch</h3>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i> Facebook</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i> Instagram</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i> Twitter</a></p>
+    <p><a href="#"><i class="fa-solid fa-arrow-right"></i> Linkedin</a></p>
+  </div>
+<div class="input">
+  <h2>Subscribe</h2>
+  <input type="text" class="in" placeholder="Email"> <button style="padding: 10px; width: 120px; background-color: red; color: white;">Submit</button>
+</div>
+</div>
+
+<div class="copyright">
+  <p>Copyright © 2024 website design</p>
+</div>
+<!-- footer code -->
+
+
+<script src="final.js"></script>
+
+  
+</body>
+</html>
