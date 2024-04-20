@@ -399,7 +399,7 @@ roboto-light {
 #courses{
      height: 550px;
      display: flex;
-     border-radius: 30px;
+   
 
 }
 
@@ -409,7 +409,6 @@ roboto-light {
     height: 500px;
     margin-left: 25px;
     border: 2px solid grey;
-    border-radius: 50px ;
     
 }
 
@@ -441,13 +440,12 @@ roboto-light {
 
 /* image card hover code */
 .image {
-    height: 300px;
+    height: 250px;
     background-image: url(https://img.freepik.com/free-photo/seamless-glittery-gold-stars-background-design-resource_53876-106172.jpg?size=626&ext=jpg&ga=GA1.1.1063679984.1712656169&semt=ais);
     background-position: center;
     background-size: cover;
     position: relative;
     overflow: hidden;
-    border-radius: 50px ;
 
   }
   
